@@ -1,0 +1,30 @@
+{
+  "name": "simple_32roguelike",
+  "main": "main.js",
+  "productName": "Simple Roguelike",
+  "description": "Simple Roguelike",
+  "author": "",
+  "version": "1.0.1",
+  "dependencies": {
+    
+    "@electron/remote": "2.1.2"
+  },
+  "scripts": {
+    "start": "electron main.js",
+    "build": "electron-builder",
+    "postinstall": "electron-builder install-app-deps"
+  },
+  "devDependencies": {
+    "electron": "32.3.3",
+    "electron-builder": "26.4.0"
+  },
+  "build": {
+    "appId": "com.changes",
+    "extraFiles": [
+      "LICENSE.GDevelop.txt"
+    ],
+    "directories": {
+      "buildResources": "buildResources"
+    }
+  }
+}
